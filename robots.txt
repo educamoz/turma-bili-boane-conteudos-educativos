@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://educamoz.github.io/turma-bili-boane-conteudos-educativos/sitemap.xml
