@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  padding-top: 120px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu fixo no topo */
+.menu {
+  background: linear-gradient(90deg, #2196f3, #00bcd4);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.logo {
+  background: linear-gradient(135deg, #2196f3, #4caf50);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.logo .turma { color: azure; }
+.logo .bili { color: #ffd700; }
+.logo .boane { color: #00ffff; }
+
+.titulo h1 {
+  font-size: 1.6rem;
+}
+
+/* Conteúdo */
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Botão voltar */
+.voltar {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  background-color: #0d8bf2;
+  
+}
+
+/* Anúncio com estilo caderno */
+.anuncio {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  color: #0d47a1;
+  border-left: 5px solid #2196f3;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.anuncio p{
+
+    margin-bottom: 10px
+
+}
+
+/*estilizando os links*/
+.anuncio a{
+ border-radius: 5px;
+ padding: 10px;
+ margin: 30px;
+ margin-left: 20%;
+ margin-right: 20%;
+ color: #ececec;
+ font-size: larger;
+ background-color: #34107293;
+ box-shadow: 0 8px 14px rgb(5, 2, 2);
+ display: block;
+ margin-bottom: 4px;
+ text-decoration: none;
+ text-align: center;
+}
+
+
+.aviso{
+
+text-align: center;
+
+  background: linear-gradient(135deg, #e3f2fd, #ffffff); /* Azul claro com branco */
+  color: #0d47a1; /* Azul escuro para o texto */
+  border-left: 5px solid #2196f3; /* Faixa azul lateral */
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+
+}
+
+/* Rodapé */
+footer {
+  background: #00000018;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 28px;
+ 
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.fa-facebook-square { color: #3b5998; }
+.fa-whatsapp-square { color: #25d366; }
+.fa-youtube-square { color: #ff0000; }
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+}
+section {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 10px 5px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.anuncio, .aviso {
+  text-align: center;
+}
+
+.exemplo {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #0d47a1;
+  margin-top: 10px;
+}
+
+.demonstrar {
+  font-size: 1.05rem;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  background: #f1f8ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 5px 0;
+}
+.demo{
+  text-decoration: none;
+  text-overflow:unset;
+}
+
+
+.detalhe {
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}
+
+h3 {
+  margin-top: 15px;
+  color: #0d47a1;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+.baloon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;           /* espaço entre emoji e balão */
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.logo-box {
+  background: #f0f0f0;
+  border: 3px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 15px;
+  font-size: 3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.baloon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 25px;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  line-height: 1.6;
+  flex: 1;             /* faz o balão ocupar o resto do espaço */
+}
+
+.baloon::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.icons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icons a img {
+  width: 28px;
+  height: 28px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+.wts{color: #4caf50;}
+.fb{color: #0d47a1;}
+.tube{color: #ff0000;}
+
+
+
+
+/* Estilo para tabelas no conteúdo */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden; /* para aplicar o border-radius também nas bordas da tabela */
+}
+
+table th, table td {
+  text-align: left;
+  padding: 10px 12px;
+}
+
+table th {
+  background: linear-gradient(90deg, #2196f3, #00bcd4);
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9fcff;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
+}
+
+table td {
+  color: #333;
+}
